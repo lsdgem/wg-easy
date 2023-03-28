@@ -25,6 +25,6 @@ module.exports.WG_PRE_UP = process.env.WG_PRE_UP || '';
 module.exports.WG_POST_UP = process.env.WG_POST_UP || `iptables -t nat -A POSTROUTING -s ${cidr.address.addressMinusSuffix}/${cidr.address.subnetMask} -o eth0 -j MASQUERADE;
 iptables -A INPUT -p udp -m udp --dport ${module.exports.WG_PORT} -j ACCEPT;
 iptables -A FORWARD -i wg0 -j ACCEPT;
-iptables -A FORWARD -o wg0 -j ACCEPT;`.replaceAll('\n', ' ');
+iptables -A FORWARD -o wg0 -j ACCEPT;`.replace(/\n/g, ' ');
 module.exports.WG_PRE_DOWN = process.env.WG_PRE_DOWN || '';
 module.exports.WG_POST_DOWN = process.env.WG_POST_DOWN || '';
