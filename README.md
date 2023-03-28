@@ -2,8 +2,9 @@
 
 ![GitHub Stars](https://img.shields.io/github/stars/lsdgem/wg-easy)
 
-**FORK**: Now you should use CIDR notation to define WG_DEFAULT_ADDRESS env-variable. I've also uploaded an updated docker image: `lsdgem/wg-easy`.  
+**FORK**: Now you should use CIDR notation to define `WG_DEFAULT_ADDRESS` env-variable. I've also uploaded an updated docker image: `lsdgem/wg-easy`.  
 It's a shame CIDR support wasn't present in the original repo. `10.8.0.x`? Seriously? Damn.  
+**This fork also fixes `WG_PORT` env-var not being handled AT ALL. Original repo completely ignores it's existence.**  
 I don't have a NodeJS IDE nor did I ever write code in this environment. Any PRs are highly appreciated!
 
 You have found the easiest way to install & manage WireGuard on any Linux host!
