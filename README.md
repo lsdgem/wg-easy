@@ -113,6 +113,6 @@ And then run the `docker run -d \ ...` command above again.
 * [Using WireGuard-Easy with Pi-Hole](https://github.com/WeeJeWel/wg-easy/wiki/Using-WireGuard-Easy-with-Pi-Hole)
 * [Using WireGuard-Easy with nginx/SSL](https://github.com/WeeJeWel/wg-easy/wiki/Using-WireGuard-Easy-with-nginx-SSL)
 
-> "Don't remove any links to the original project or donation pages;"
-> Doesn't deliver quality code
+\> "Don't remove any links to the original project or donation pages;"  
+\> Doesn't deliver quality code  
 At this point - just fuck you, bro. No one does stuff like this.
