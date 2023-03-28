@@ -1,11 +1,6 @@
 # WireGuard Easy
 
-[![Build & Publish Docker Image to Docker Hub](https://github.com/WeeJeWel/wg-easy/actions/workflows/deploy.yml/badge.svg?branch=production)](https://github.com/WeeJeWel/wg-easy/actions/workflows/deploy.yml)
-[![Lint](https://github.com/WeeJeWel/wg-easy/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/WeeJeWel/wg-easy/actions/workflows/lint.yml)
-[![Docker](https://img.shields.io/docker/v/weejewel/wg-easy/latest)](https://hub.docker.com/r/weejewel/wg-easy)
-[![Docker](https://img.shields.io/docker/pulls/weejewel/wg-easy.svg)](https://hub.docker.com/r/weejewel/wg-easy)
-[![Sponsor](https://img.shields.io/github/sponsors/weejewel)](https://github.com/sponsors/WeeJeWel)
-![GitHub Stars](https://img.shields.io/github/stars/weejewel/wg-easy)
+![GitHub Stars](https://img.shields.io/github/stars/lsdgem/wg-easy)
 
 **FORK**: Now you should use CIDR notation to define WG_DEFAULT_ADDRESS env-variable. I've also uploaded an updated docker image: `lsdgem/wg-easy`.  
 It's a shame CIDR support wasn't present in the original repo. `10.8.0.x`? Seriously? Damn.  
@@ -93,10 +88,10 @@ These options can be configured by setting environment variables using `-e KEY="
 | `WG_DEFAULT_ADDRESS` | `10.7.0.1/24` | `10.8.0.1/16` | Clients IP address range. |
 | `WG_DEFAULT_DNS` | `1.1.1.1` | `8.8.8.8, 8.8.4.4` | DNS server clients will use. |
 | `WG_ALLOWED_IPS` | `0.0.0.0/0, ::/0` | `192.168.15.0/24, 10.0.1.0/24` | Allowed IPs clients will use. |
-| `WG_PRE_UP` | `...` | - | See [config.js](https://github.com/WeeJeWel/wg-easy/blob/master/src/config.js#L19) for the default value. |
-| `WG_POST_UP` | `...` | `iptables ...` | See [config.js](https://github.com/WeeJeWel/wg-easy/blob/master/src/config.js#L20) for the default value. |
-| `WG_PRE_DOWN` | `...` | - | See [config.js](https://github.com/WeeJeWel/wg-easy/blob/master/src/config.js#L27) for the default value. |
-| `WG_POST_DOWN` | `...` | `iptables ...` | See [config.js](https://github.com/WeeJeWel/wg-easy/blob/master/src/config.js#L28) for the default value. |
+| `WG_PRE_UP` | `...` | - | See [config.js](https://github.com/lsdgem/wg-easy/blob/master/src/config.js#L19) for the default value. |
+| `WG_POST_UP` | `...` | `iptables ...` | See [config.js](https://github.com/lsdgem/wg-easy/blob/master/src/config.js#L20) for the default value. |
+| `WG_PRE_DOWN` | `...` | - | See [config.js](https://github.com/lsdgem/wg-easy/blob/master/src/config.js#L27) for the default value. |
+| `WG_POST_DOWN` | `...` | `iptables ...` | See [config.js](https://github.com/lsdgem/wg-easy/blob/master/src/config.js#L28) for the default value. |
 
 > If you change `WG_PORT`, make sure to also change the exposed port.
 
